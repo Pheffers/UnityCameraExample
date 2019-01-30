@@ -54,6 +54,10 @@ public class CameraControl : MonoBehaviour
     [SerializeField]
     [Tooltip("Time in seconds for camera transition between modes")]
     float camTransitionTime;
+
+    [SerializeField]
+    [Tooltip("Whether or not to invert the camera's Y-Axis")]
+    bool inverted;
 #endregion
 
 #region Private Variables
@@ -61,7 +65,6 @@ public class CameraControl : MonoBehaviour
     float theta;
     float horizontalOffset;
     float verticalOffset;
-    public bool inverted;
     Vector3 lastMousePosition;
     bool transitioning;
 #endregion
